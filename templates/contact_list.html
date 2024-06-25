@@ -19,8 +19,10 @@
         <a href="/contacts/{{contact['id']}}">{{contact['name']}}</a>
       </li>
       {%endfor%}
+      <a class="fw-bold list-group-item" href="/contacts/favorites"
+        >Favorite contacts</a
+      >
     </ul>
-    <a class="fw-bold" href="/contacts/favorites">Favorite contacts</a><br />
     <a href="/">Go Back</a>
   </body>
 </html>
