@@ -4,13 +4,31 @@
     "name": "Ran",
     "age": 44,
     "phone": "0521251236",
-    "email": "ran@gmail.com"
+    "email": "ran@gmail.com",
+    "is_favorite": false
   },
   {
     "id": 2,
     "name": "Piotr",
     "age": 28,
     "phone": "0532851633",
-    "email": "piotr@gmail.com"
+    "email": "piotr@gmail.com",
+    "is_favorite": true
+  },
+  {
+    "id": 3,
+    "name": "Albert",
+    "age": 32,
+    "phone": "0525854562",
+    "email": "albert@gmail.com",
+    "is_favorite": true
+  },
+  {
+    "id": 4,
+    "name": "Sven",
+    "age": 18,
+    "phone": "0533854562",
+    "email": "sven@gmail.com",
+    "is_favorite": true
   }
 ]

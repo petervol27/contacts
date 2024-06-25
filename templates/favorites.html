@@ -9,14 +9,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Contacts list</title>
+    <title>Favorites list</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <ol>
-      {% for contact in contacts %}
-      <li><a href="/contacts/{{contact['id']}}">{{contact['name']}}</a></li>
-      {%endfor%}
-    </ol>
+    <ul>
+      {%for contact in contacts%} {%if contact['is_favorite'] == True%}
+      <li><p>{{contact['name']}} is a favorite contact!</p></li>
+      {%endif%} {%endfor%}
+    </ul>
   </body>
 </html>
