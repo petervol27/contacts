@@ -34,7 +34,6 @@ def hello_world():
     <h2>testing this stuff</h2>
     <h3>this is the main page</h3>
     <a href="/contacts">contacts list</a><br>
-    <a href="/contacts/favorites">Favorite contacts</a><br>
     <a href="/add-contact">Add contact</a>
     """
 

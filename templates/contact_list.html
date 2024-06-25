@@ -11,12 +11,16 @@
     />
     <title>Contacts list</title>
   </head>
-  <body>
+  <body class="text-center">
     <h1>Hello World!</h1>
-    <ol>
+    <ul class="list-group">
       {% for contact in contacts %}
-      <li><a href="/contacts/{{contact['id']}}">{{contact['name']}}</a></li>
+      <li class="list-group-item">
+        <a href="/contacts/{{contact['id']}}">{{contact['name']}}</a>
+      </li>
       {%endfor%}
-    </ol>
+    </ul>
+    <a class="fw-bold" href="/contacts/favorites">Favorite contacts</a><br />
+    <a href="/">Go Back</a>
   </body>
 </html>
