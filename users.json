@@ -1,0 +1,5 @@
+[
+  { "id": 1, "user_name": "kaki", "password": "kaki1234" },
+  { "id": 2, "user_name": "peter", "password": "peter123" },
+  { "id": 3, "user_name": "pip", "password": "pipinstall" }
+]

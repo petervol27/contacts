@@ -9,17 +9,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Favorites list</title>
+    <title>Welcome Page</title>
   </head>
-  <body class="text-center">
+  <body style="text-align: center">
     {% include 'nav.html' %}
-    <ul class="list-group">
-      {%for contact in contacts%} {%if contact['is_favorite'] == True%}
-      <li class="list-group-item">
-        <p>{{contact['name']}} is a favorite contact!</p>
-      </li>
-      {%endif%} {%endfor%}
-    </ul>
-    <a href="/contacts">Go Back</a>
+    <h1>Hello, Welcome to our program!</h1>
+    <menu>
+      <h2>This is our menu, please click on what you would like to do</h2>
+      <div>
+        <a href="/contacts">contacts list</a><br />
+        <a href="/add_contact">Add contact</a>
+      </div>
+      <button class="btn btn-info mt-4"><a href="/">Logout</a></button>
+    </menu>
   </body>
 </html>

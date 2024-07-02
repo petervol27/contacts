@@ -12,10 +12,30 @@
     <title>contact {{contact['id']}}</title>
   </head>
   <body class="text-center">
+    {% include 'nav.html' %}
     <h1>{{contact['name']}}</h1>
     <p>is {{contact['age']}} old</p>
     <p>phone number is: {{contact['phone']}}</p>
     <p>and the email address is: {{contact['email']}}</p>
-    <a href="/contacts">Go Back</a>
+    <button class="btn btn-primary">
+      <a
+        class="text-white text-decoration-none"
+        href="/edit_contact/{{contact['id']}}"
+        >Edit Contact</a
+      >
+    </button>
+    <button class="btn btn-danger">
+      <a
+        class="text-white text-decoration-none"
+        href="/delete_contact/{{contact['id']}}"
+        >Delete Contact</a
+      >
+    </button>
+    <br />
+    <div class="mt-4">
+      <button class="btn btn-warning">
+        <a class="text-dark text-decoration-none" href="/contacts">Go Back</a>
+      </button>
+    </div>
   </body>
 </html>

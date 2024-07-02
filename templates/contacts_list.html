@@ -12,7 +12,8 @@
     <title>Contacts list</title>
   </head>
   <body class="text-center">
-    <h1>Hello World!</h1>
+    {% include 'nav.html' %}
+    <h1>Contacts List:</h1>
     <ul class="list-group">
       {% for contact in contacts %}
       <li class="list-group-item">
@@ -23,6 +24,6 @@
         >Favorite contacts</a
       >
     </ul>
-    <a href="/">Go Back</a>
+    <a href="/welcome">Go Back</a>
   </body>
 </html>
